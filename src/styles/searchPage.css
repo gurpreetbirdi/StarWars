@@ -1,0 +1,77 @@
+.starWarsSearchBox{
+  margin: 0 auto;
+}
+.starWarsSearchPanel{
+  text-align: center;
+}
+.radioButton{
+  color: white;
+}
+.radioButtonGroup {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none !important;
+  position: relative;
+  border-radius: 50%;
+}
+.radioButtonGroup:hover {
+  background: #9faab7;
+}
+.radioButtonGroup:checked {
+  background: #40e0d0;
+  outline: none !important;
+}
+.radioButtonGroup:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.radioButtonGroup:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+}
+.radioButtonGroup.radio {
+  border-radius: 50%;
+}
+.radioButtonGroup.radio::after {
+  border-radius: 50%;
+}
+.logout{
+  text-align: center;
+  float: right;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.loaderBackground{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10000;
+}
